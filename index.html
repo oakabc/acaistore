@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Açai | สุขภาพดีเริ่มต้นที่ความอร่อย</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pastel-purple: #E1CDEC;
+            --pastel-pink: #FFD1DC;
+            --pastel-yellow: #FFF8E7;
+            --text-dark: #5A4A5E;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Kanit', sans-serif;
+        }
+
+        body {
+            background-color: var(--pastel-yellow);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--white);
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #B57EDC;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover { color: #B57EDC; }
+
+        .hero {
+            background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-purple));
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+
+        .btn {
+            background-color: var(--white);
+            color: #B57EDC;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn:hover { transform: translateY(-3px); }
+
+        .section { padding: 60px 20px; text-align: center; }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .product-card {
+            background-color: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            text-align: left;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .product-img { width: 100%; height: 200px; object-fit: cover; }
+
+        .product-info { padding: 20px; }
+
+        .price { color: #B57EDC; font-size: 1.2rem; font-weight: 600; }
+
+        .buy-btn {
+            display: block;
+            text-align: center;
+            background-color: var(--pastel-pink);
+            color: var(--text-dark);
+            padding: 10px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: var(--white);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Pastel Açai</div>
+        <nav>
+            <a href="#home">หน้าแรก</a>
+            <a href="#nutrition">โภชนาการ</a>
+            <a href="#products">เมนู</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>สดชื่น อร่อย ดีต่อสุขภาพ</h1>
+        <p>เติมความสดใสให้ทุกวันด้วย Acai Bowl พรีเมียม</p>
+        <a href="#products" class="btn">สั่งซื้อเลย</a>
+    </section>
+
+    <section class="section" id="nutrition">
+        <h2 style="margin-bottom:40px; color:#B57EDC;">ความรู้ด้านโภชนาการ</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h2>🫐</h2>
+                <h3>Antioxidants</h3>
+                <p>ต้านอนุมูลอิสระสูง ช่วยให้ผิวพรรณสดใสและชะลอวัย</p>
+            </div>
+            <div class="card">
+                <h2>🥗</h2>
+                <h3>High Fiber</h3>
+                <p>ช่วยระบบขับถ่ายและทำให้อิ่มท้องนาน เหมาะกับการคุมน้ำหนัก</p>
+            </div>
+            <div class="card">
+                <h2>❤️</h2>
+                <h3>Healthy Fats</h3>
+                <p>มี Omega 3, 6, 9 บำรุงหัวใจและระบบสมอง</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="products" style="background: var(--pastel-purple);">
+        <h2 style="margin-bottom:40px;">เมนูแนะนำ</h2>
+        <div class="grid-container">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1590137785461-89309ecacdd3?w=500" class="product-img">
+                <div class="product-info">
+                    <h3>Signature Bowl</h3>
+                    <p>อาซาอิเข้มข้นพร้อมผลไม้สด</p>
+                    <div class="price">฿ 189</div>
+                    <a href="#" class="buy-btn">สั่งเลย</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1556881286-fc6915169721?w=500" class="product-img">
+                <div class="product-info">
+                    <h3>Berry Blast</h3>
+                    <p>เน้นตระกูลเบอร์รี่เพื่อความสดชื่น</p>
+                    <div class="price">฿ 199</div>
+                    <a href="#" class="buy-btn">สั่งเลย</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Pastel Açai. Stay Healthy, Stay Pastel.</p>
+    </footer>
+
+</body>
+</html>
